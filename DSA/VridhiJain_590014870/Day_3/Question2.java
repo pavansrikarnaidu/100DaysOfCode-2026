@@ -1,14 +1,12 @@
 package DSA.VridhiJain_590014870.Day_3;
 class Solution {
-    public void rotate(int[] arr, int k) {
-        int size = arr.length;
-        int[] newArr = new int[size];
-        for (int i = 0; i < size; i++) {
-            int rot = (i + k) % size;
-            newArr[rot] = arr[i];
+    public int countOccurrences(int[] arr, int target) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                count++;
+            }
         }
-        for (int i = 0; i < size; i++) {
-            arr[i] = newArr[i];
-        }
+        return count;
     }
 }
