@@ -16,6 +16,7 @@ class Solution:
         return slow
 
 
+
 # Create Linked List
 def createLinkedList(arr):
     if not arr:
