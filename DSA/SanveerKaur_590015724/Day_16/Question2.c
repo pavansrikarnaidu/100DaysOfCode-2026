@@ -76,6 +76,7 @@ int main()
     }
 
     printf("Original List:\n");
+    
     display(head);
 
     head = deleteLast(head);
